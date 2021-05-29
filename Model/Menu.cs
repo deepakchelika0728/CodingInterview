@@ -4,6 +4,7 @@ using System.Text;
 
 namespace CafeMenu.Model
 {
+    // Model for Menu
     class Menu
     {
         public string MenuItem { get; set; }
