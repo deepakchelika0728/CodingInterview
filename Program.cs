@@ -58,7 +58,7 @@ namespace CafeMenu
             // Item has food then add service charge 10%
             if (selectedMenuList.Any(k => k.ItemType.Contains("Food")))
             {
-                // Item has hot food then add service charge 20% charge not greater than 20
+                // Item has hot food then add service charge 20% charge not greater than 20£
                 if (selectedMenuList.Any(k => k.ItemCategory.Contains("Hot")))
                 {
                     calculatedServiceCharges = (Math.Round((totalBill * 20 / 100), 2) > 20.00M) ? 20.00M: Math.Round((totalBill * 20 / 100), 2);
